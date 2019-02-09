@@ -1,0 +1,21 @@
+First of all i tried to show what file type is it : 
+
+1- file findme
+I found that is an executable file ELF 64 bits .. "ELF 64" 
+
+2-with a simple "strings findme " i got a base64 strings 
+ dWdnYyUzQSUyRiUyRnJpeW0lN0JoZXlfZnJyemZfZWJnZ3JhX2p2Z3VfNjQlN0RwZ3MucGJ6
+
+3- echo "dWdnYyUzQSUyRiUyRnJpeW0lN0JoZXlfZnJyemZfZWJnZ3JhX2p2Z3VfNjQlN0RwZ3MucGJ6" | base64 --decode
+uggc%3A%2F%2Friym%7Bhey_frrzf_ebggra_jvgu_64%7Dpgs.pbz
+
+this is an encoded url : 
+
+uggc://riym{hey_frrzf_ebggra_jvgu_64}pgs.pbz
+
+4-Using ROT13 online tool , I find a surprise : 
+
+http://evlz{url_seems_rotten_with_64}ctf.com
+
+
+FLAG :  evlz{url_seems_rotten_with_64}ctf
